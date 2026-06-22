@@ -450,6 +450,15 @@
     }
     .proj-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; }
     .proj-card p { font-size: 0.82rem; color: var(--text3); line-height: 1.65; }
+    .proj-card ul { list-style: none; margin-top: 0.5rem; }
+    .proj-card li {
+      font-size: 0.78rem; color: var(--text3); padding: 0.2rem 0;
+      padding-left: 1.1rem; position: relative; line-height: 1.55;
+    }
+    .proj-card li::before {
+      content: '›'; position: absolute; left: 0; color: var(--accent);
+      font-weight: 700; font-size: 1rem;
+    }
 
     /* ─── Awards ─── */
     .awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
@@ -671,8 +680,8 @@
       </div>
       <h1>Hi, I'm <span>Anil Kumar</span></h1>
       <div class="tagline">
-        Quality Engineering Leader &middot; Test Architect &middot; QA Manager &middot; SDET &middot; Automation Lead &middot;
-        AI-Driven Testing &middot; Healthcare, Banking &amp; Education
+        Quality Engineering Leader &middot; Test Architect &middot; QA Manager &middot; Test Automation Specialist &middot;
+        SDET &middot; Automation Lead &middot; AI-Driven Testing
       </div>
       <div class="btn-group">
         <a href="#resume" class="btn btn-primary">
@@ -698,16 +707,19 @@
     </div>
     <div class="about-wrap">
       <div class="about-text reveal">
-        <p>AI-focused Senior QA Manager with 14+ years of experience driving intelligent test automation
-           and modern Quality Engineering practices across Healthcare and Enterprise domains. 
+        <p>Senior QA Manager and Test Architect with 14+ years of experience leading Quality Engineering,
+           Test Automation, and QA transformation initiatives across Healthcare and Enterprise domains.
         </p>
         <p>
-          Expertise in building scalable Playwright (Web & API) automation frameworks using JavaScript/TypeScript, 
-          POM, BDD, and Data-Driven architectures. Hands-on experience leveraging GitHub Copilot, OpenAI ChatGPT, 
-          Claude, Playwright Agents, MCP Server integration, and CLI tools to enhance automation productivity 
-          and test optimization. Strong background in CI/CD implementation, Agile delivery, QA strategy, 
-          release governance, risk-based testing, audit management, and healthcare compliance standards 
-          including HIPAA, GDPR, and FDA 21 CFR Part 11.
+          Strong expertise in building scalable automation frameworks using Playwright, Selenium,
+          JavaScript/TypeScript, POM, BDD, and Data-Driven approaches for Web, API, and Mobile platforms.
+          Hands-on experience implementing AI-assisted testing workflows leveraging Copilot, Playwright Agents,
+          MCP-based integrations, and RAG-enabled approaches to improve productivity and automation efficiency.
+        </p>
+        <p>
+          Proven experience in QA strategy, quality governance, CI/CD implementation, release management,
+          shift-left testing, and risk-based quality practices. Strong healthcare domain expertise including
+          HIPAA, GDPR, FDA 21 CFR Part 11, and regulatory validation practices.
         </p>
       </div>
       <div class="about-highlights reveal reveal-d1">
@@ -745,16 +757,19 @@
           <h3>Sr. QA Manager</h3>
           <h4>Medocity Inc. &middot; Gurugram</h4>
           <ul>
-            <li>Led QA strategy and quality governance initiatives for AI-enabled healthcare and remote patient monitoring platforms serving patients, providers, and care managers</li>
-            <li>Architected scalable Playwright Web &amp; API automation frameworks using JavaScript/TypeScript, Selenium, Cucumber BDD, Page Object Model (POM), and Data-Driven approaches</li>
-            <li>Implemented AI-assisted testing workflows using GitHub Copilot, OpenAI ChatGPT, Claude, Playwright Agents, MCP Server integration, and Playwright CLI tools to improve productivity and test optimization</li>
-            <li>Drove enterprise automation transformation by integrating automated testing into CI/CD pipelines (Jenkins, GitHub Actions, Azure DevOps) enabling continuous testing and faster release cycles</li>
-            <li>Established quality gates, shift-left testing practices, and risk-based testing methodologies to reduce production defect leakage and improve release confidence</li>
-            <li>Led cross-functional QA initiatives across Web, Mobile (Android/iOS), API, Integration, Regression, and UAT testing</li>
-            <li>Mentored and guided QA teams on automation best practices, framework architecture, AI-driven testing adoption, and quality engineering standards</li>
-            <li>Supported healthcare regulatory and audit activities aligned with HIPAA, HITRUST, GDPR, and FDA 21 CFR Part 11 compliance requirements</li>
-            <li>Improved release readiness through requirement validation, defect triage, stakeholder collaboration, and data-driven quality metrics</li>
-            <li>Championing the adoption of modern Quality Engineering and AI-enabled automation practices to shift quality from a testing activity to an engineering culture</li>
+            <li>Spearheaded QA strategy and quality governance for AI-enabled healthcare and remote patient monitoring platforms, ensuring seamless patient-provider-care manager workflows across web and mobile surfaces</li>
+            <li>Architected a scalable Playwright Web &amp; API automation framework (JavaScript, POM, Data-Driven) with parallel execution and CI/CD integration, reducing regression cycle time by over 40%</li>
+            <li>Pioneered AI-assisted testing workflows using Copilot, Claude, Playwright Agents, and MCP-based orchestration with RAG and prompt engineering techniques to improve test generation, failure analysis, and automation efficiency</li>
+            <li>Established release Quality Gates and shift-left testing practices, cutting production defect leakage and measurably improving release confidence across 2–4 week cycles</li>
+            <li>Led, mentored, and scaled a QA team of 10+ engineers, driving adoption of automation best practices, framework architecture standards, and AI-augmented testing methodologies</li>
+            <li>Championed healthcare compliance and audit readiness aligned with HIPAA, GDPR, and FDA 21 CFR Part 11, including IQ/OQ/PQ, RTM, and validation documentation</li>
+            <li>Strengthened release readiness through requirement validation, defect triage, stakeholder collaboration, and data-driven quality metrics reporting</li>
+          </ul>
+          <h4 style="margin-top:0.75rem;font-size:0.82rem;color:var(--accent);font-weight:600;">Experience Accomplishments</h4>
+          <ul>
+            <li>Designed AI-enabled QA workflows using multi-agent orchestration and MCP integrations (Playwright, JIRA, GitHub, API, File System) to improve automation productivity and execution efficiency</li>
+            <li>Implemented RAG-based retrieval using Langflow, ChromaDB, and prompt engineering strategies to enhance context-aware test generation and automation workflows</li>
+            <li>Explored AI-assisted capabilities including LLM-based test scenario generation, failure analysis, defect pattern identification, and proof-of-concept agentic workflows for test optimization</li>
           </ul>
         </div>
       </div>
@@ -817,9 +832,14 @@
           <span class="tag">POM</span>
           <span class="tag">Hybrid &amp; Data-Driven</span>
           <span class="tag">Playwright Agents</span>
-          <span class="tag">MCP Server</span>
+          <span class="tag">Playwright MCP</span>
+          <span class="tag">JIRA MCP</span>
           <span class="tag">Playwright CLI</span>
-          <span class="tag">AI-Assisted (Copilot, Claude)</span>
+          <span class="tag">GitHub Copilot</span>
+          <span class="tag">Claude</span>
+          <span class="tag">Cursor AI</span>
+          <span class="tag">Langflow / LangChain</span>
+          <span class="tag">RAG &amp; ChromaDB</span>
           <span class="tag">Cross-Browser</span>
           <span class="tag">Parallel Execution</span>
         </div>
@@ -941,17 +961,38 @@
       <div class="proj-card reveal">
         <span class="proj-icon">&#9733;</span>
         <h3>V3 Platforms</h3>
-        <p>Configuration Portal &middot; Site Portal &middot; MyCare Journey — AI-enabled healthcare platform supporting patient monitoring, guided sessions, alerts, reminders, role-based workflows, and provider collaboration.</p>
+        <p><strong>Configuration Portal &middot; Site Portal &middot; MyCare Journey</strong> — AI-enabled healthcare ecosystem for patient engagement, care coordination, and clinical workflow management with role-based access, AI-driven insights, and secure communication.</p>
+        <ul>
+          <li>Configured account onboarding, organizational hierarchy, RBAC, user groups, and module-level access permissions</li>
+          <li>Enabled setup of guided and ad-hoc sessions based on business conditions and patient-specific criteria</li>
+          <li>Implemented AI-driven capabilities: vital summarization, session recommendations, patient history insights, automated scheduling, anomaly detection, and severity alerts</li>
+          <li>Validated RBAC via persona-based testing across Physicians, Nurses, Care Managers, Admins, and Patients</li>
+          <li>Integrated EMR/FHIR-based data exchange with validation of audit logs and operational workflows</li>
+          <li>Ensured HIPAA &amp; FDA 21 CFR Part 11 compliance for secure messaging and encryption standards</li>
+        </ul>
       </div>
       <div class="proj-card reveal reveal-d1">
         <span class="proj-icon">&#9733;</span>
         <h3>V2 Platforms</h3>
-        <p>Provisioning &middot; Provider Portal &middot; HomeHealth — Remote patient monitoring and care coordination platform for chronic disease management, patient engagement, and secure healthcare communication.</p>
+        <p><strong>Provisioning &middot; Provider Portal &middot; HomeHealth</strong> — Remote patient monitoring and care coordination platform for healthcare providers, hospital chains, and care teams.</p>
+        <ul>
+          <li>Supported account onboarding with parent-child structures, partner accounts, and role-based access across organizations</li>
+          <li>Managed provisioning of healthcare resources, patient programs, and content configurations</li>
+          <li>Facilitated EMR/FHIR integrations for patient onboarding and care coordination</li>
+          <li>Enabled real-time monitoring of patient health, alerts, medication adherence, and activity tracking</li>
+          <li>Implemented secure communication via messaging and Live Help on Demand Audio/Video calling</li>
+          <li>Validated audit trails, workflow processes, and compliance with HIPAA, GDPR, HITRUST &amp; FDA 21 CFR Part 11</li>
+        </ul>
       </div>
       <div class="proj-card reveal reveal-d2">
         <span class="proj-icon">&#9733;</span>
         <h3>PDC System</h3>
-        <p>Web-based eTextbook and licensing management platform integrated with AWS S3, AES Admin, notifications, and reporting workflows.</p>
+        <p>SAP Hybris-based professional development and licensing platform for educators using HMH programs. Integrated with AWS S3, AES Admin, notifications, and reporting workflows.</p>
+        <ul>
+          <li>Enabled educators to access instructional resources, virtual events, and self-paced learning via personalized dashboards</li>
+          <li>Supported content licensing, analytics, and operational management across web, mobile, and print channels</li>
+          <li>Managed large multi-language and multi-currency catalogs for a scalable user experience</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -1009,6 +1050,11 @@
         <h4>Advanced Diploma in Software Engineering</h4>
         <p>NIIT &middot; New Delhi</p>
       </div>
+      <div class="edu-card reveal">
+        <span class="edu-icon">&#127891;</span>
+        <h4>Software Testing Certification</h4>
+        <p>DUCAT &middot; New Delhi</p>
+      </div>
       <div class="edu-card reveal reveal-d2">
         <span class="edu-icon">&#127891;</span>
         <h4>Higher Secondary &amp; High School</h4>
@@ -1024,7 +1070,7 @@
     </div>
     <div class="resume-card reveal">
       <p>Get the full PDF — 14+ years of QA leadership, automation expertise,<br/>healthcare compliance, and AI-driven testing experience.</p>
-      <a href="resume/Kumar_Anil_Resume_17June26.pdf" target="_blank" class="btn btn-primary" download>
+      <a href="resume/Kumar_Anil_Resume_14yrExp.pdf" target="_blank" class="btn btn-primary" download>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume (PDF)
       </a>
